@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contáctanos — Belleza & Co.</title>
+
+  <link rel="stylesheet" href="style-shared.css" />
+  <link rel="stylesheet" href="style-contacto.css" />
+</head>
+<body>
+
+
+  <!-- ============================
+       HEADER
+       ============================ -->
+  <header>
+
+    <a href="quienes-somos.html" class="logo-header">
+      <!-- AQUÍ VA TU IMAGEN DE LOGO EN EL HEADER -->
+      <img src="" alt="Logo de la empresa" />
+      <span>Belleza &amp; Co.</span>
+    </a>
+
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="quienes-somos.html">Quiénes Somos</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="contacto.html" class="activo">Contáctanos</a>
+    </nav>
+
+  </header>
+  <!-- FIN HEADER -->
+
+
+  <!-- ============================
+       CONTENIDO PRINCIPAL
+       ============================ -->
+  <main>
+
+    <!-- Banner con el título de la página -->
+    <div class="banner-pagina">
+      <p>Estamos para ayudarte</p>
+      <h1>Contáctanos</h1>
+    </div>
+
+    <!-- Sección de contacto -->
+    <section class="seccion-contacto">
+      <div class="contacto-grid">
+
+
+        <!-- ========================
+             COLUMNA IZQUIERDA
+             Información de contacto
+             ======================== -->
+        <div class="info-contacto">
+
+          <!-- TÍTULO -->
+          <h2>Queremos escucharte</h2>
+
+          <!-- TEXTO INTRODUCTORIO -->
+          <p class="texto-intro">
+            Escribe aquí un texto de bienvenida a la sección de contacto.
+            Invita al visitante a llenar el formulario para recibir
+            información sobre productos o distribución.
+          </p>
+
+          <!-- Lista de datos -->
+          <ul class="lista-contacto">
+
+            <li>
+              <span class="icono">📍</span>
+              <div>
+                <strong>Sede central</strong>
+                <!-- ESCRIBE AQUÍ LA DIRECCIÓN -->
+                Dirección de la empresa, Ciudad — País
+              </div>
+            </li>
+
+            <li>
+              <span class="icono">📞</span>
+              <div>
+                <strong>Teléfono</strong>
+                <!-- ESCRIBE AQUÍ EL TELÉFONO -->
+                (+XX) XXX XXX XXXX
+              </div>
+            </li>
+
+            <li>
+              <span class="icono">✉</span>
+              <div>
+                <strong>Administración</strong>
+                <!-- CORREO ADMINISTRACIÓN -->
+                admin@tuempresa.com
+              </div>
+            </li>
+
+            <li>
+              <span class="icono">✉</span>
+              <div>
+                <strong>Ventas</strong>
+                <!-- CORREO VENTAS -->
+                ventas@tuempresa.com
+              </div>
+            </li>
+
+            <li>
+              <span class="icono">✉</span>
+              <div>
+                <strong>Compras</strong>
+                <!-- CORREO COMPRAS -->
+                compras@tuempresa.com
+              </div>
+            </li>
+
+            <li>
+              <span class="icono">✉</span>
+              <div>
+                <strong>Marketing</strong>
+                <!-- CORREO MARKETING -->
+                marketing@tuempresa.com
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        <!-- FIN COLUMNA IZQUIERDA -->
+
+
+        <!-- ========================
+             COLUMNA DERECHA
+             Formulario de contacto
+             ======================== -->
+        <div class="caja-formulario">
+
+          <h3>Envíanos un mensaje</h3>
+          <p class="subtitulo">Todos los campos son obligatorios.</p>
+
+          <!-- FORMULARIO -->
+          <form action="#" method="POST">
+
+            <!-- Fila 1: Nombre y Apellido -->
+            <div class="fila-dos">
+
+              <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+              </div>
+
+              <div class="campo">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
+              </div>
+
+            </div>
+
+            <!-- Fila 2: Teléfono y Empresa -->
+            <div class="fila-dos">
+
+              <div class="campo">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+XX XXX XXX XXXX" required />
+              </div>
+
+              <div class="campo">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" required />
+              </div>
+
+            </div>
+
+            <!-- Campo: Correo electrónico -->
+            <div class="campo">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+            </div>
+
+            <!-- Campo: Mensaje -->
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí…" required></textarea>
+            </div>
+
+            <!-- Botón enviar -->
+            <button type="submit" class="btn-enviar">Enviar</button>
+
+          </form>
+          <!-- FIN FORMULARIO -->
+
+        </div>
+        <!-- FIN COLUMNA DERECHA -->
+
+
+      </div>
+      <!-- FIN contacto-grid -->
+    </section>
+
+  </main>
+  <!-- FIN CONTENIDO PRINCIPAL -->
+
+
+  <!-- ============================
+       FOOTER
+       ============================ -->
+  <footer>
+    <p class="nombre-marca">Belleza &amp; Co.</p>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="quienes-somos.html">Quiénes Somos</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="contacto.html">Contáctanos</a>
+    </nav>
+    <p class="derechos">&copy; 2025 Belleza &amp; Co. Todos los derechos reservados.</p>
+  </footer>
+  <!-- FIN FOOTER -->
+
+
+  <a href="index.html" class="btn-inicio" title="Volver al inicio">&#8679;</a>
+
+
+</body>
+</html>

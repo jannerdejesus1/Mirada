@@ -1,0 +1,210 @@
+/* ==========================================
+   ESTILOS COMPARTIDOS - Belleza & Co.
+   Este archivo lo usan TODOS los HTML
+   ========================================== */
+
+/* Fuentes de Google (se descargan automáticamente) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap');
+
+/* Reset básico: quita márgenes y rellenos por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables de color: cámbialas aquí y se aplican en todo */
+:root {
+  --color-header:  #616160;
+  --color-footer:  #1D1D1B;
+  --color-fondo:   #FFFFFF;
+  --color-dorado:  #b89a7a;
+  --color-texto:   #2a2a2a;
+  --color-gris:    #7a7a7a;
+}
+
+/* Estilos generales de la página */
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+
+  /* Esto hace que el footer siempre quede abajo */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* El main ocupa todo el espacio disponible */
+main {
+  flex: 1;
+}
+
+
+/* ==========================================
+   HEADER (barra de arriba)
+   ========================================== */
+header {
+  background-color: var(--color-header);
+  padding: 0 40px;
+  height: 70px;
+
+  /* Coloca el logo y el nav en la misma fila */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Se queda pegado arriba al hacer scroll */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo dentro del header */
+.logo-header {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Imagen del logo en el header */
+.logo-header img {
+  height: 40px;
+  width: auto;
+}
+
+/* Nombre de la marca en el header */
+.logo-header span {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+/* Navegacion: los enlaces del menú */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: 25px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+/* Enlace activo: la página donde estás ahora */
+nav a.activo {
+  opacity: 1;
+  border-bottom: 1px solid var(--color-dorado);
+  padding-bottom: 2px;
+}
+
+
+/* ==========================================
+   FOOTER (pie de página)
+   ========================================== */
+footer {
+  background-color: var(--color-footer);
+  padding: 40px;
+  text-align: center;
+}
+
+footer .nombre-marca {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+footer nav {
+  margin-bottom: 15px;
+}
+
+footer nav a {
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 12px;
+  transition: color 0.3s;
+}
+
+footer nav a:hover {
+  color: var(--color-dorado);
+}
+
+footer .derechos {
+  color: rgba(255,255,255,0.3);
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+
+/* ==========================================
+   BOTON FLOTANTE (volver al inicio)
+   Aparece fijo en la esquina inferior derecha
+   ========================================== */
+.btn-inicio {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  background-color: var(--color-header);
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 200;
+}
+
+.btn-inicio:hover {
+  background-color: var(--color-dorado);
+  transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   BANNER DE PAGINA
+   Titulo grande que aparece en cada seccion
+   ========================================== */
+.banner-pagina {
+  background-color: var(--color-header);
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.banner-pagina h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.banner-pagina p {
+  color: rgba(255,255,255,0.6);
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}

@@ -1,0 +1,178 @@
+/* ==========================================
+   ESTILOS DE CONTACTO
+   ========================================== */
+
+@import url('style-shared.css');
+
+
+/* ==========================================
+   SECCION PRINCIPAL DE CONTACTO
+   ========================================== */
+.seccion-contacto {
+  padding: 70px 40px;
+  background-color: white;
+}
+
+/* Divide en 2 columnas: info a la izq, formulario a la der */
+.contacto-grid {
+  max-width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 60px;
+  align-items: start;
+}
+
+
+/* ==========================================
+   COLUMNA IZQUIERDA: información
+   ========================================== */
+.info-contacto h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #2a2a2a;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.info-contacto .texto-intro {
+  font-size: 14px;
+  color: #7a7a7a;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+/* Lista de datos de contacto */
+.lista-contacto {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.lista-contacto li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 13px;
+  color: #7a7a7a;
+}
+
+/* Icono de cada item */
+.lista-contacto .icono {
+  font-size: 16px;
+  color: #b89a7a;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Etiqueta en negrita (ej: "Ventas:") */
+.lista-contacto strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  margin-bottom: 2px;
+}
+
+
+/* ==========================================
+   COLUMNA DERECHA: formulario
+   ========================================== */
+.caja-formulario {
+  background-color: #faf9f7;
+  border: 1px solid #ede8e3;
+  padding: 35px 30px;
+}
+
+.caja-formulario h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #2a2a2a;
+  margin-bottom: 5px;
+}
+
+.caja-formulario .subtitulo {
+  font-size: 13px;
+  color: #7a7a7a;
+  margin-bottom: 25px;
+}
+
+/* El formulario como tal */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Fila con 2 campos uno al lado del otro */
+.fila-dos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* Cada grupo: etiqueta + campo */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Etiqueta del campo */
+.campo label {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #7a7a7a;
+}
+
+/* Campos de texto */
+.campo input,
+.campo textarea {
+  background-color: white;
+  border: 1px solid #ddd8d2;
+  padding: 10px 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #2a2a2a;
+  outline: none;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+/* Cambia el borde al hacer clic en el campo */
+.campo input:focus,
+.campo textarea:focus {
+  border-color: #b89a7a;
+}
+
+/* Área de mensaje */
+.campo textarea {
+  min-height: 120px;
+  resize: vertical;  /* Solo se puede redimensionar verticalmente */
+}
+
+/* Botón de enviar */
+.btn-enviar {
+  align-self: flex-end;  /* Lo empuja a la derecha */
+  background-color: #1D1D1B;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: #b89a7a;
+}

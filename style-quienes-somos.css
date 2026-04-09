@@ -1,0 +1,121 @@
+/* ==========================================
+   ESTILOS DE QUIENES SOMOS
+   ========================================== */
+
+@import url('style-shared.css');
+
+
+/* ==========================================
+   SECCION PRINCIPAL
+   ========================================== */
+.seccion-nosotros {
+  padding: 70px 40px;
+  background-color: white;
+}
+
+/* Contenedor centrado con ancho máximo */
+.contenedor {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Logo centrado en esta página */
+.logo-nosotros {
+  width: 200px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+
+/* ==========================================
+   BLOQUES DE TEXTO (mision, vision, valores)
+   ========================================== */
+.bloque {
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ede8e3;
+}
+
+/* El último bloque no tiene línea abajo */
+.bloque:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Etiqueta pequeña encima del titulo */
+.bloque .etiqueta {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #b89a7a;
+  margin-bottom: 12px;
+}
+
+/* Titulo del bloque */
+.bloque h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #2a2a2a;
+  margin-bottom: 15px;
+}
+
+/* Linea dorada decorativa */
+.linea-dorada {
+  width: 50px;
+  height: 1px;
+  background-color: #b89a7a;
+  margin: 0 auto 20px auto;
+}
+
+/* Párrafo de texto */
+.bloque p {
+  font-size: 15px;
+  color: #7a7a7a;
+  line-height: 1.9;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+
+/* ==========================================
+   TARJETAS DE VALORES
+   ========================================== */
+.grid-valores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* 2 columnas iguales */
+  gap: 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Cada tarjeta de valor */
+.valor {
+  background-color: #faf9f7;
+  border: 1px solid #ede8e3;
+  padding: 25px 20px;
+}
+
+.valor .icono {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Nombre del valor */
+.valor h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #2a2a2a;
+  margin-bottom: 8px;
+}
+
+/* Descripción del valor */
+.valor p {
+  font-size: 13px;
+  color: #7a7a7a;
+  line-height: 1.7;
+  max-width: none;  /* Anula el max-width del .bloque p */
+}
