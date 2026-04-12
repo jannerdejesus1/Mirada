@@ -1,0 +1,139 @@
+/* FUENTE DE GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Poppins:wght@300;400&display=swap');
+
+/* COLORES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFFFFF;
+  color: #2a2a2a;
+}
+
+/* ---- HEADER ---- */
+header {
+  background-color: #616160;
+  height: 70px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 45px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---- HERO (logo grande + descripción) ---- */
+.hero {
+  background-color: #FFFFFF;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero img {
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  font-size: 15px;
+  color: #7a7a7a;
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* ---- INFO (sección de texto debajo) ---- */
+.info {
+  background-color: #f5f3f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.info h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-size: 15px;
+  color: #7a7a7a;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* ---- FOOTER ---- */
+footer {
+  background-color: #1D1D1B;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer .marca {
+  color: rgba(255,255,255,0.7);
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+footer nav a {
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 10px;
+  letter-spacing: 1px;
+}
+
+footer nav a:hover {
+  color: #b89a7a;
+}
+
+footer .derechos {
+  color: rgba(255,255,255,0.3);
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+/* ---- BOTÓN VOLVER ARRIBA ---- */
+.btn-arriba {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #616160;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.btn-arriba:hover {
+  background-color: #b89a7a;
+}

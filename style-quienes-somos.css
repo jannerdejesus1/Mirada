@@ -1,0 +1,74 @@
+/* ---- QUIÉNES SOMOS ---- */
+
+/* Hero: solo el logo, sin descripción */
+.hero {
+  background-color: #FFFFFF;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero img {
+  width: 220px;
+}
+
+/* Bloque de texto (misión, visión, valores) */
+.bloque {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Fondo blanco */
+.bloque.blanco {
+  background-color: #FFFFFF;
+}
+
+/* Fondo gris claro */
+.bloque.gris {
+  background-color: #f5f3f0;
+}
+
+.bloque h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+
+.bloque p {
+  font-size: 15px;
+  color: #7a7a7a;
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* ---- TARJETAS DE VALORES ---- */
+.valores {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  max-width: 900px;
+  margin: 35px auto 0 auto;
+}
+
+.valor {
+  background-color: #f5f3f0;
+  border: 1px solid #e0dbd5;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+/* Nombre del valor en negrita */
+.valor-nombre {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  color: #2a2a2a;
+  margin-bottom: 8px;
+}
+
+.valor p {
+  font-size: 13px;
+  color: #7a7a7a;
+  max-width: none;
+}
