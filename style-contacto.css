@@ -136,10 +136,11 @@ button:hover {
 }
 
 .mapa {
-  margin-top: 25px;
+  margin-top: 50px;
 }
 
 .mapa iframe {
+  
   width: 100%;
   height: 300px;
   border: 1px solid #e0dbd5;
